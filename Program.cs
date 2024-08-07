@@ -4,7 +4,7 @@ namespace YtDlpGui
     {
         public static string YtDlpBinPath = "bin/yt-dlp.exe";
         public static string Aria2BinPath = "bin/aria2c_unlim.exe";
-        public static bool Debug = true;
+        public static bool Debug = false;
 
         /// <summary>
         ///  The main entry point for the application.
