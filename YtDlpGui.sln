@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YtDlpGui", "YtDlpGui.csproj", "{7B94E792-7B0B-453E-A177-C2352A1DA653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B94E792-7B0B-453E-A177-C2352A1DA653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B94E792-7B0B-453E-A177-C2352A1DA653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B94E792-7B0B-453E-A177-C2352A1DA653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B94E792-7B0B-453E-A177-C2352A1DA653}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4AEF5D2-0ADE-4C0A-947C-795B842A7FB4}
+	EndGlobalSection
+EndGlobal
