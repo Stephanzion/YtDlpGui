@@ -51,6 +51,7 @@
             label5 = new Label();
             button2 = new Button();
             textBox3 = new TextBox();
+            label7 = new Label();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -334,12 +335,26 @@
             textBox3.TabIndex = 1;
             textBox3.TabStop = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Cursor = Cursors.Hand;
+            label7.Font = new Font("Consolas", 9.75F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label7.ForeColor = Color.LightSkyBlue;
+            label7.Location = new Point(7, 513);
+            label7.Name = "label7";
+            label7.Size = new Size(126, 15);
+            label7.TabIndex = 10;
+            label7.Text = "Check for updates";
+            label7.Click += label7_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(685, 538);
+            Controls.Add(label7);
             Controls.Add(panel6);
             Controls.Add(label2);
             Controls.Add(label3);
@@ -368,6 +383,7 @@
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -394,5 +410,6 @@
         private TextBox textBox3;
         private Label label6;
         private CheckBox checkBox1;
+        private Label label7;
     }
 }

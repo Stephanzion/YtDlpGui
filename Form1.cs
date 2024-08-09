@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System.Net;
 using YtDlpGui.Models;
 
 namespace YtDlpGui
@@ -310,6 +311,24 @@ namespace YtDlpGui
         {
             if (button3_Click_Task != null)
                 button3_Click_Task.Start();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            button3.Enabled = false;
+            Task.Run(async () =>
+            {
+                var ytdlpBinUrl = "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe";
+                using (var c = new WebClient())
+                {
+                    File.Delete(Program.YtDlpBinPath);
+                    c.DownloadFileAsync(new Uri(ytdlpBinUrl), Program.YtDlpBinPath);
+                    c.DownloadFileCompleted += (s, e) => { button3.Enabled = true; };
+                }
+            });
+
+            MessageBox.Show("Yt-Dlp has been updated!", "Success", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
     }
 }
